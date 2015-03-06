@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "activemodel"
   spec.add_dependency "i18n"
-  spec.add_dependency "paperclip", "~> 3.4.1"
+  spec.add_dependency "paperclip"
 
   spec.add_development_dependency "activerecord", ">= 3.0.0"
   spec.add_development_dependency "bundler", "~> 1.3"
