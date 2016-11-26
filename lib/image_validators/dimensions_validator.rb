@@ -43,7 +43,7 @@ class DimensionsValidator < ActiveModel::EachValidator
           record.errors[attribute] <<
               (options[:message] || I18n.t('image_validators.errors.' + operation.to_s + '.height',
                                            default: "height must be " + operation.to_s.humanize.downcase + " %{height}px",
-                                           height: width))
+                                           height: height))
         end
 
       end

@@ -274,12 +274,8 @@ describe DimensionsValidator do
       class PhotoError < TestModel
         validates :picture, :dimensions => {:different_from => {width: 620, height: 620}}
       end
-    }.to raise_error
+    }.to raise_error(ArgumentError, "You must pass either :less_than, :less_than_or_equal_to, :greater_than, :greater_than_or_equal_to, or :equal_to to the validator")
     end
   end
 
 end
-
-
-
-
